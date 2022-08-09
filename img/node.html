@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)file:///Users/jang-eunbin/Desktop/javascript/07%EB%AC%B8%EC%84%9C%EA%B0%9D%EC%B2%B4%EB%AA%A8%EB%8D%B8(DOM)/05.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node</title>
+
+    <style>
+        *{margin: 0; padding: 0;}
+
+        body{
+            background: #4b4b4b;
+        }
+
+        #page{
+            width: 400px;
+            margin: 50px auto;
+            background:  #c6d6c1;
+        }
+
+        h1{
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 1.3em;
+            color: #3f413f;
+            margin-bottom: 50px;
+        }
+
+        li{
+            list-style: none;
+            background: #fac6b1;
+            line-height: 50px;
+            font-size: 1.2em;
+            padding-left: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 1px #292929;
+        }
+
+        .red{background: #f8d5d1;}
+
+        .sky{background: #b4c2ce;}
+
+        .check{
+            background: #fff url(../img/check.png) no-repeat 95% 50% /30px;
+            color: #fac6b1;;
+        }
+
+        .line{
+            text-decoration: underline overline;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <h1><img src="./node_files/icon copy.png" alt=""></h1>
+        <h2>node</h2>
+        <ul>
+            <li>딸기 케익</li>
+            <li>블루베리 치즈케익</li>
+            <li id="three">오레오 케익</li>
+            <li class="check">당근 케익</li>
+            <li>마카롱 케익</li>
+        </ul>
+    </div>
+
+    <script>
+    const elStart = document.getElementsByTagName('ul')[0];
+    //기준이 되는 태그, 항상 배열로 인식
+    console.log(elStart);
+
+    const elFirst = elStart.firstChild;
+    console.log(elFirst);
+    </script>
+
+
+</body></html>
